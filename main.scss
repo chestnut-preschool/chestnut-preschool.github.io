@@ -1,0 +1,132 @@
+//variables-------------------
+
+$font: Verdana, Geneva, sans-serif;
+$nav-border: 0.25rem solid #006;
+
+
+//mixins----------------------
+
+@mixin text($type) {
+  @if($type == header){
+    color: #006;
+	font-size: 2rem;
+  }
+  @else{
+    font-size: 1rem;
+  }
+  font-family: $font;
+  text-align: center;
+}
+
+
+//media------------------------
+
+@media only screen and (max-width: 768px) { 
+  body {
+     
+  }
+}
+
+
+//other------------------------
+
+html {
+  font-size: 20px;
+  background-image: url(./images/corkboard.jpg);
+}
+
+body {
+	background-color: #FFF;
+	padding: 5%;
+	background-image: url(./images/corkboard.jpg);
+}
+
+.header {
+  @include text(header);
+  letter-spacing: -0.3rem;
+  line-height: 2.75rem;
+}
+
+.menu {
+	display: block;
+	background: #006;
+	text-align: center;
+}
+
+.menu li {
+	display: inline-block;
+	text-align: left;
+	color: #FFF;
+    margin: 0% 5%;
+	border: $nav-border;
+	&:hover {
+	  color: #006;
+	  background: #FFF;
+	  border-color: #FFF;
+	}
+}
+
+.menu a {
+  color: #FFF;
+}
+
+.footer {
+  display: block;
+  background: #006;
+}
+
+.note {
+  text-align: center;
+}
+
+h6 {
+  @include text(h6);
+  color: #FFF;
+  font-size: 0.5rem;
+  text-align: right;
+  margin: 4%;
+  border: $nav-border;
+}
+
+p {
+  @include text(p);
+}
+
+a {
+  @include text(a);
+  text-decoration: none;
+  color: #09F;
+  text-decoration: none;
+  &:hover {
+    color: #006;
+  }
+}
+
+th {
+  @include text(table);
+  background: #006;
+  color: #FFF;
+  margin: 3%;
+  border: $nav-border;
+}
+
+td {
+  @include text(table);
+  background: #FFF;
+  color: #000;
+  table-border: $nav-border;
+  margin: 3%;
+}
+
+table {
+  border: $nav-border;
+  margin: 5%;
+  background-color: #FFF;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: center;
+  text-align: center;
+}

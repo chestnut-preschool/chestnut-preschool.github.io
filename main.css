@@ -1,0 +1,98 @@
+html {
+  font-size: 20px;
+  background-image: url(./images/corkboard.jpg); }
+
+body {
+  background-color: #FFF;
+  padding: 5%;
+  background-image: url(./images/corkboard.jpg); }
+
+.header {
+  color: #006;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+  letter-spacing: -0.3rem;
+  line-height: 2.75rem; }
+
+.menu {
+  display: block;
+  background: #006;
+  text-align: center; }
+
+.menu li {
+  display: inline-block;
+  text-align: left;
+  color: #FFF;
+  margin: 0% 5%;
+  border: 0.25rem solid #006; }
+  .menu li:hover {
+    color: #006;
+    background: #FFF;
+    border-color: #FFF; }
+
+.menu a {
+  color: #FFF; }
+
+.footer {
+  display: block;
+  background: #006; }
+
+.note {
+  text-align: center; }
+
+h6 {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+  color: #FFF;
+  font-size: 0.5rem;
+  text-align: right;
+  margin: 4%;
+  border: 0.25rem solid #006; }
+
+p {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center; }
+
+a {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: #09F;
+  text-decoration: none; }
+  a:hover {
+    color: #006; }
+
+th {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+  background: #006;
+  color: #FFF;
+  margin: 3%;
+  border: 0.25rem solid #006; }
+
+td {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+  background: #FFF;
+  color: #000;
+  table-border: 0.25rem solid #006;
+  margin: 3%; }
+
+table {
+  border: 0.25rem solid #006;
+  margin: 5%;
+  background-color: #FFF; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: center;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
