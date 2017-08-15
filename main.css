@@ -1,11 +1,11 @@
 html {
-  font-size: 20px;
-  background-image: url(./images/corkboard.jpg); }
+  font-size: 20px; }
 
 body {
   background-color: #FFF;
   padding: 5%;
-  background-image: url(./images/corkboard.jpg); }
+  background-image: url(./images/corkboard.jpg);
+  background-attachment: fixed; }
 
 .header {
   color: #006;
@@ -96,3 +96,4 @@ img {
   text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
+
