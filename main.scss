@@ -32,13 +32,13 @@ $nav-border: 0.25rem solid #006;
 
 html {
   font-size: 20px;
-  background-image: url(./images/corkboard.jpg);
 }
 
 body {
 	background-color: #FFF;
 	padding: 5%;
 	background-image: url(./images/corkboard.jpg);
+	background-attachment: fixed;
 }
 
 .header {
