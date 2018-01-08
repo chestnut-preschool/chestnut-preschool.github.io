@@ -15,28 +15,56 @@ body {
   letter-spacing: -0.3rem;
   line-height: 2.75rem; }
 
-.menu {
-  display: block;
+.tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   background: #006;
-  text-align: center; }
+  text-align: center;
+  padding: 0 2rem; }
 
-.menu li {
-  display: inline-block;
-  text-align: left;
-  color: #FFF;
-  margin: 0% 5%;
-  border: 0.25rem solid #006; }
-  .menu li:hover {
+.tabs-container {
+  height: 80px; }
+
+.footer-container {
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  display: inline; }
+
+.tabs-container, .footer-container {
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  width: 80%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #006;
+  z-index: 10; }
+  .tabs-container--top, .footer-container--top {
+    position: fixed;
+    top: 0; }
+
+.tab {
+  color: white; }
+  .tab:hover {
     color: #006;
-    background: #FFF;
-    border-color: #FFF; }
+    background: white;
+    transition: all 0.5s ease; }
 
-.menu a {
-  color: #FFF; }
+.tab, .tab-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 1rem; }
 
-.footer {
-  display: block;
-  background: #006; }
+.tab-select {
+  color: #006;
+  background: white; }
 
 .note {
   text-align: center; }
@@ -47,9 +75,8 @@ h6 {
   text-align: center;
   color: #FFF;
   font-size: 0.5rem;
-  text-align: right;
-  margin: 4%;
-  border: 0.25rem solid #006; }
+  text-align: center;
+  margin: 0%; }
 
 p {
   font-size: 1rem;
@@ -60,39 +87,23 @@ a {
   font-size: 1rem;
   font-family: Verdana, Geneva, sans-serif;
   text-align: center;
-  text-decoration: none;
   color: #09F;
   text-decoration: none; }
   a:hover {
     color: #006; }
-
-th {
-  font-size: 1rem;
-  font-family: Verdana, Geneva, sans-serif;
-  text-align: center;
-  background: #006;
-  color: #FFF;
-  margin: 3%;
-  border: 0.25rem solid #006; }
-
-td {
-  font-size: 1rem;
-  font-family: Verdana, Geneva, sans-serif;
-  text-align: center;
-  background: #FFF;
-  color: #000;
-  table-border: 0.25rem solid #006;
-  margin: 3%; }
-
-table {
-  border: 0.25rem solid #006;
-  margin: 5%;
-  background-color: #FFF; }
 
 img {
   max-width: 100%;
   height: auto;
   display: center;
   text-align: center; }
+
+.webmaster {
+  height: 1.2rem;
+  width: 180px; }
+  .webmaster:hover {
+    color: teal;
+    background: gray;
+    transition: all 0.5s ease; }
 
 /*# sourceMappingURL=main.css.map */
